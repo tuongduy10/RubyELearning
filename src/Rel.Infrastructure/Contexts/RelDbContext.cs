@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace Rel.Domain.Contexts;
+﻿namespace Rel.Infrastructure.Contexts;
 
 public class RelDbContext(DbContextOptions<RelDbContext> options) : DbContext(options)
 {

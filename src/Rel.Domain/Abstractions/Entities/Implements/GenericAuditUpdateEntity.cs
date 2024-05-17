@@ -2,6 +2,6 @@
 
 public abstract class GenericAuditUpdateEntity<T> : GenericEntity<T>, IGenericAuditUpdateEntity<T>
 {
-    public DateTime? UpdatedDate { get; set; }
-    public string? UpdatedBy { get; set; }
+    public DateTime? UpdatedDate { get; set; } = null;
+    public string? UpdatedBy { get; set; } = null;
 }
