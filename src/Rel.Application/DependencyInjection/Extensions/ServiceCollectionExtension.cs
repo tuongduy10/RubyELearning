@@ -9,7 +9,7 @@ namespace Rel.Application.DependencyInjection.Extensions;
 
 public static class ServiceCollectionExtension
 {
-    public static IServiceCollection AddConfigurationAutoMapper(this IServiceCollection services)
+    public static IServiceCollection AddAutoMapperConfiguration(this IServiceCollection services)
     {
         services.AddAutoMapper(typeof(ProductsProfile));
         //services.AddAutoMapper(typeof(UsersProfile));
