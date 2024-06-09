@@ -1,7 +1,15 @@
-﻿namespace Rel.Presentation.APIs;
+﻿using Microsoft.Extensions.Logging;
+using Serilog;
 
-public static class UserApi
+namespace Rel.Presentation.APIs;
+
+public class UserApi
 {
+    private readonly ILogger<UserApi> _logger;
+    public UserApi(ILogger<UserApi> logger)
+    {
+        _logger = logger;
+    }
     public static async Task<IResult> CreateUser()
     {
         return Results.Ok();
@@ -16,6 +24,7 @@ public static class UserApi
     }
     public static async Task<string> HelloWorld(string name)
     {
+        Log.Information("test result !");
         return "hello world " + name;
     }
 }
