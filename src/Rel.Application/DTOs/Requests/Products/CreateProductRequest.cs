@@ -1,4 +1,4 @@
-﻿namespace Rel.Application.DTOs.Requests.Products;
+﻿namespace Rel.Application.Dtos.Requests.Products;
 
 public class CreateProductRequest
 {

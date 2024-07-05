@@ -7,5 +7,6 @@ global using Rel.Api.Middlewares;
 global using Microsoft.AspNetCore.Diagnostics;
 global using Newtonsoft.Json;
 global using Newtonsoft.Json.Serialization;
+global using Rel.Domain.Abstractions.Exceptions;
 
 

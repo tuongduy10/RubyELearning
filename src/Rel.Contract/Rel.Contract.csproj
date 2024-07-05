@@ -7,13 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\NewFolder\" />
-    <Folder Include="Services\v2\" />
-    <Folder Include="Services\v1\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\v1\MailCenter\" />
+    <Folder Include="Services\v1\Training\" />
+    <Folder Include="Services\v1\ApplicationUser\" />
+    <Folder Include="Services\v2\ApplicationUser\" />
+    <Folder Include="Services\v2\MailCenter\" />
+    <Folder Include="Services\v2\Training\" />
   </ItemGroup>
 
 </Project>
